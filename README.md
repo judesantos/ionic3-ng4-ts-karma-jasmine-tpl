@@ -6,35 +6,35 @@ Getting Started:
 
 git clone https://github.com/judesantos/ionic3-ng4-ts-karma-jasmine-tpl.git myProject
 
-## cd to the clone destination path
+## Go to the clone destination path
 
 cd myProject
 
-## install all dependencies listed in package.json
+## Install all dependencies listed in package.json
 
 npm install
 
 
-## to run tests
+## To run tests
 
 npm run test
 
 
-## to run build and start the application
+## To run build and start the application
 
 npm run server
 
 
-## to run build only
+## To run build only
 
 npm run build
 
-## to clean previous build
+## To clean previous build
 
 npm run clean
 
 
-## to run linter
+## To run linter
 
 
 npm run lint
