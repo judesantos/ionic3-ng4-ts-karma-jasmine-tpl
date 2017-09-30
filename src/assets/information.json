@@ -1,0 +1,70 @@
+{
+  "items": [
+    {
+      "name": "Action",
+      "children": [
+        {
+          "name": "Academy"
+        },
+        {
+          "name": "Ionic"
+        }
+      ]
+    },
+    {
+      "name": "Pizza",
+      "children": [
+        {
+          "name": "Traditional",
+          "children": [
+            {
+              "name": "Salami"
+            },
+            {
+              "name": "Prosciutto"
+            }
+          ]
+        },
+        {
+          "name": "Gourmet",
+          "children": [
+            {
+              "name": "Bombay"
+            },
+            {
+              "name": "Crazy Dog"
+            },
+            {
+              "name": "Italia"
+            },
+            {
+              "name": "Tuna"
+            }
+          ]
+        },
+        {
+          "name": "Bestseller",
+          "children": [
+            {
+              "name": "Academy"
+            },
+            {
+              "name": "Ionic"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Drinks",
+      "children": [
+        {
+          "name": "Cokes"
+        },
+        {
+          "name": "Sprites"
+        }
+      ]
+    }
+  ]
+}

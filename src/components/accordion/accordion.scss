@@ -1,0 +1,30 @@
+accordion {
+
+
+    a {
+      text-decoration: none;
+      color: #9f9f9f;
+      cursor: pointer;
+    }
+
+    .list-md {
+      margin-bottom: 0px;
+    }
+
+    .label-md {
+      margin: 0px !important;
+    }
+
+    .item-md {
+      padding-left: 0px !important;
+    }
+
+
+    .list-md {
+      .list-md {
+        .list-md {
+          margin: 0px 12px !important;
+        }
+      }
+    }
+}

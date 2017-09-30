@@ -1,0 +1,31 @@
+<ion-list *ngFor="let item of information; let i = index" no-lines>
+
+  <!-- Toggle Button -->
+  <ion-item
+    ngClass="{'section-active': item.open, 'section': !item.open}">
+     <a (click)="toggleSection(i)">{{item.name }}</a>
+  </ion-item>
+
+  <ion-list *ngIf="item.children && item.open" no-lines>
+    <!-- Second Level -->
+    <ion-list *ngFor="let child of item.children; let j = index" no-lines>
+      <!-- Toggle Button -->
+      <ion-item *ngIf="child.children">
+        <a (click)="toggleItem(i, j)" >{{child.name }}</a>
+      </ion-item>
+      <ion-item *ngIf="!child.children">
+        <a (click)="handleEvent(child)">{{child.name }}</a>
+      </ion-item>
+
+      <ion-list *ngIf="child.children && child.open" no-lines>
+        <!-- Third Level -->
+        <ion-item *ngFor="let item of child.children; let k = index">
+          <a (click)="handleEvent(item)">{{item.name }}</a>
+        </ion-item>
+      </ion-list>
+
+    </ion-list>
+
+  </ion-list>
+
+</ion-list>
