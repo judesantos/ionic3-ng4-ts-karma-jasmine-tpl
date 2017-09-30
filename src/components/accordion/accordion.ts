@@ -3,7 +3,8 @@ import { Http } from '@angular/http'
 import 'rxjs/add/operator/map'
 
 /**
- * Generated class for the AccordionComponent component.
+ * 3 level accordion component. To be used as dropdown menu.
+ * TODO: make into multi-level system.
  *
  * See https://angular.io/api/core/Component for more info on Angular
  * Components.
@@ -20,7 +21,7 @@ export class AccordionComponent {
   currentSelection: any
 
   constructor(private http: Http) {
-    let local = this.http.get('assets/information.json').map(res => res.json().items)
+    let local = this.http.get('assets/json/information.json').map(res => res.json().items)
       local.subscribe(data => {
         this.information = data
         this.information.forEach(branch => {
