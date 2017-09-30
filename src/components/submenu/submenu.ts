@@ -12,11 +12,13 @@ import { Component } from '@angular/core';
 })
 export class SubmenuComponent {
 
-  text: string;
+  public menuSelected: Function
 
   constructor() {
-    console.log('Hello SubmenuComponent Component');
-    this.text = 'Hello World';
+    this.menuSelected = this.onMenuSelected.bind(this)
   }
 
+  onMenuSelected(node) {
+    alert(node.name)
+  }
 }

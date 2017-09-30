@@ -15,17 +15,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class HomePage {
 
-  public menuSelected: Function
-
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.menuSelected = this.onMenuSelected.bind(this)
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
-  }
-
-  onMenuSelected(node) {
-    alert(node.name)
   }
 }
