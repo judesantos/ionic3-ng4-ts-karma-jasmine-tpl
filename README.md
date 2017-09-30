@@ -22,7 +22,7 @@ npm run test
 
 ## To run build and start the application
 
-npm run server
+npm run ionic:serve
 
 
 ## To run build only
