@@ -1,8 +1,6 @@
-# ionic3 with angular4 project compatible with desktops and mobile devices.
+# ionic3 with angular4 project template. compatible with desktops and mobile devices.
 
-This is a starter template for ionic3 projects.
-
-The project also comes pre-configured with:
+This is a starter template for ionic3 projects. It also comes configured with the folllowing.
 
 1. angular4
 2. sass stylesheets
@@ -16,22 +14,28 @@ The project also comes pre-configured with:
 
 User should at least have a basic grasp of the following technologies.
 
-nodejs
-angular2
-es6
-npm
-ionic3
-html5/css3
-sass
-responsive css
+- nodejs
+- angular2
+- es6
+- npm
+- ionic3
+- html5/css3
+- sass
+- responsive css
 
 ## Compatible platforms and devices
 
-desktop (firefox, chrome)
-tablets (ipad, small tablets)
-android/iphone devices (ipone7, iphone6, windows phones, etc.)
-
-
+- desktop
+  - firefox
+  - chrome
+- tablets
+  - ipad
+  - small tablets
+- android/iphone devices
+  - ipone7
+  - iphone6
+  - windows phones
+  - etc.
 
 
 # Getting Started:
