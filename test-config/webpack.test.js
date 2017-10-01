@@ -1,6 +1,5 @@
-var webpack = require('webpack')
-var path = require('path')
-
+var webpack = require('webpack');
+var path = require('path');
 
 module.exports = {
   devtool: 'inline-source-map',
@@ -10,20 +9,16 @@ module.exports = {
   },
 
   module: {
-    rules: [
-    {
-      test: /\.ts$/,
-      loaders: [
-        {
+    rules: [{
+        test: /\.ts$/,
+        loaders: [{
           loader: 'ts-loader'
-        },
-        'angular2-template-loader'
-      ]
+        }, 'angular2-template-loader']
       },
       {
         test: /.+\.ts$/,
-        exclude: /(index.ts|mock.ts|\.spec\.ts$)/,
-        loader:  'istanbul-instrumenter-loader',
+        exclude: /(index.ts|mocks.ts|\.spec\.ts$)/,
+        loader: 'istanbul-instrumenter-loader',
         enforce: 'post',
         query: {
           esModules: true
@@ -42,13 +37,14 @@ module.exports = {
 
   plugins: [
     new webpack.ContextReplacementPlugin(
-      /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
-      root('.src'),
-      {}
+      // The (\\|\/) piece accounts for path separators in *nix and Windows
+      /(ionic-angular)|(angular(\\|\/)core(\\|\/)@angular)/,
+      root('./src'), // location of your src
+      {} // a map of your routes
     )
   ]
-}
+};
 
 function root(localPath) {
-  return path.resolve(__dirname, localPath)
+  return path.resolve(__dirname, localPath);
 }
