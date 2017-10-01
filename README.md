@@ -1,9 +1,9 @@
-# ionic3 with angular4 project template. compatible with desktops and mobile devices.
+# ionic3 with angular4 project template - Compatible with desktops and mobile devices.
 
 This is a starter template for ionic3 projects. It also comes configured with the folllowing.
 
 1. angular4
-2. sass stylesheets
+2. sass
 3. es6
 4. karma-jasmine unit testing tools
 5. UT reporting with live reloading.
