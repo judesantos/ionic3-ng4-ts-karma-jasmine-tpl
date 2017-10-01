@@ -5,7 +5,7 @@ This is a starter template for ionic3 projects. It also comes configured with th
 1. angular4
 2. sass
 3. es6
-4. karma-jasmine unit testing tools
+4. karma-jasmine unit testing and e2e testing tools. (from: [ionic unit testing example](https://github.com/ionic-team/ionic-unit-testing-example) by [ionic-team](https://github.com/ionic-team))
 5. UT reporting with live reloading.
 6. live reloading on source file changes.
 7. responsive layout for desktop devices
